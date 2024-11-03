@@ -1,7 +1,18 @@
 
 import { BsFilterLeft } from "react-icons/bs";
 
-export default function ShopCard({ imageUrl, title, showIcon = false }:any) {
+
+interface ShopDivProps {
+  title: string;
+  imageUrl:string;
+  showIcon?:boolean;
+}
+
+
+
+
+
+export default function ShopCard({ imageUrl, title, showIcon = false }:ShopDivProps) {
   return (
     <div className="relative w-full h-[600px]">
       {showIcon && (

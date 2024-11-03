@@ -1,14 +1,19 @@
 import Image from "next/image";
 
-export default function Member_div(props: any) {
+
+interface MemberDivProps {
+  title?: string;
+}
+
+export default function Member_div({title}:MemberDivProps) {
   return (
     <>
       <div className="w-full h-auto">
         <div className="max-w-[1600px] mx-auto flex flex-wrap justify-between  p-4">
           {/* Conditional rendering for title or placeholder with flex-grow */}
-          {props.title ? (
+          {title ? (
             <div className="text-3xl sm:text-5xl font-bold mb-4 sm:mb-0 w-full sm:w-auto text-center sm:text-left">
-              {props.title}
+              {title}
             </div>
           ) : (
             <div className="w-full sm:w-auto mb-4 sm:mb-0 mx-28"></div>

@@ -1,5 +1,4 @@
 import { BsFilterLeft } from "react-icons/bs";
-import Navbar from "../components/event_navbar";
 import Member_div from "../components/member";
 import { MdArrowOutward } from "react-icons/md";
 import Event_navbar from "../components/event_navbar";
